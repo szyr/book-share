@@ -1,0 +1,13 @@
+---
+layout: default
+title: 书籍分享
+---
+
+<h2>{{ page.title }}</h2>
+
+<p> 书籍分享</p>
+<ul>
+    {% for post in site.posts %}
+        <li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+    {% endfor %}
+</ul>
